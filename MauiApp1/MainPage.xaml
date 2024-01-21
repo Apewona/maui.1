@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+<VerticalStackLayout Padding="30,0" Spacing="25">
+    <Editor x:Name="editor" Text="I am an Editor" />
+    <Entry x:Name="entry" Text="I am an Entry" />
+    <Button FontAttributes="Bold" Text="A button" /> 
+    <BoxView Color="CornflowerBlue"
+             CornerRadius="10"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+              />
+    <Label Text="This is underlined text." TextDecorations="Underline"  />
+    <Label Text="This is text with strikethrough." TextDecorations="Strikethrough" />
+    <Label Text="This is underlined text with strikethrough." TextDecorations="Underline, Strikethrough" />
+
+</VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
